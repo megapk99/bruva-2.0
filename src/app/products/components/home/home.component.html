@@ -24,7 +24,7 @@ ve<div class="body">
                   <h5 class="card-title">{{ product.name | titlecase }}</h5>
                   <p class="card-text">{{ product.Price | currency }}</p>
                   <button class="btn btn-danger" (click)="addToCart(i)">Add to cart</button>
-                  <button class="btn btn-danger" [routerLink]="['products/product-info', product.Id]">show info</button>
+                  <button class="btn btn-danger" [routerLink]="['/products/product-info', product.Id]">show info</button>
                 </div>
               </div>
         </div>
